@@ -69,14 +69,17 @@ nav li{
     cursor: pointer;
 }
 /*home page items*/
+.indBody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .container{
     border: 5px solid #4CAF50;
     background-color:#4CAF50;
     width: 700px;
     height: 400px;
-    position: relative;
-    top: 200px;
-    left: 250px;
+    margin-top: 160px;
     animation: fadeMe 2s linear 0s 1;
     box-shadow: 10px 0px 10px 10px rgb(183, 186, 187);
 }
@@ -85,22 +88,27 @@ nav li{
     bottom: 300px;
     left: 350px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-size: 3rem;
+    color: 	#e8e8e8;
 }
 .container h2{
     position: relative;
     left: 350px;
     bottom: 300px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
-    font-weight: 200;
+    font-weight: 300;
+    font-size: 1.5rem;
 }
 .container button{
     background-color: white ;
-    padding: 5px;
+    padding: 0.5rem;
     position: relative;
     left: 350px;
     bottom: 300px;
     border:2px solid rgb(6, 104, 50);
+    cursor: pointer;
 }
+
 /*My projects items*/
 .boxes{
     display: grid;
@@ -127,12 +135,12 @@ nav li{
     color: white;
     font-weight: 100;
 }
-/*About me items*/
 
+/*About me items*/
 .about{
     display: grid;
     gap: 30px;
-    grid-template-columns: repeat(auto-fill, minmax(600px, 2fr));
+    grid-template-columns: repeat(auto-fill, minmax(570px, 2fr));
     grid-template-rows: 1fr;
     justify-items: start;
 }
@@ -140,7 +148,8 @@ nav li{
     border: 5px solid #8BC34A;
     background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
     height: 300px;
-    width: 500px;
+    width: fit-content;
+    max-width: 500px;
     text-align: center;
     animation: moveBoxLeft 0.6s linear 0s 1;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
@@ -154,14 +163,16 @@ nav li{
     font-weight: 100;
     padding-left: 5px;
     padding-right: 5px;
+    font-size: 1rem;
 }
 .skills {
     border: 2px solid #2C3A47;
     height: 350px;
     width: 500px;
     text-align: center;
-    margin-left: 100px;
-    padding-right: 40px;
+    margin-left: 30px;
+    padding-left: 0px;
+    padding-right: 20px;
     background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -170,10 +181,6 @@ nav li{
 }
 .skills ul{
     text-align: center;
-    column-count: 2;
-    -webkit-column-count: 2;
-    column-gap: 20px;
-    -webkit-column-break-inside: avoid;
     display: grid;
     gap: 5px;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -191,9 +198,6 @@ nav li{
     color: white;
     font-weight: 250;
     
-}
-.skills ul li:hover{
-    cursor: pointer;
 }
 .interests {
     border: 2px solid #2C3A47;
