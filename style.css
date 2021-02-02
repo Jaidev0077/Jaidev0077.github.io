@@ -135,7 +135,12 @@ nav li{
     color: white;
     font-weight: 100;
 }
-
+#link {
+    list-style-type: none;
+    list-style: none;
+    text-align: center;
+    color: #d1dbe4;
+}
 /*About me items*/
 .about{
     display: grid;
